@@ -27,7 +27,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="icon-home image-icon" href="javascript:;"></a>
     <div title="播放/暂停" class="icon-play"></div>
-    <h3 class="subtitle">进程控制</h3>
+    <h3 class="subtitle">anaconda安装dlib</h3>
     <div class="social">
         <!--<div class="like-icon">-->
             <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -44,16 +44,23 @@
     <div class="section">
         <div class="article">
     <div class="main">
-        <h1 class="title">进程控制</h1>
+        <h1 class="title">anaconda安装dlib</h1>
         <div class="stuff">
-            <span>十一月 16, 2018</span>
+            <span>十一月 28, 2018</span>
             
-  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/linux/">linux</a></li></ul>
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/anaconda/">anaconda</a></li></ul>
 
 
         </div>
         <div class="content markdown">
-            <h4 id="fork"><a href="#fork" class="headerlink" title="fork()"></a>fork()</h4><h4 id="vfork"><a href="#vfork" class="headerlink" title="vfork()"></a>vfork()</h4><h4 id="execl"><a href="#execl" class="headerlink" title="execl()"></a>execl()</h4><h4 id="wait-waitpid"><a href="#wait-waitpid" class="headerlink" title="wait() waitpid()"></a>wait() waitpid()</h4><h4 id="system"><a href="#system" class="headerlink" title="system()"></a>system()</h4>
+            <p>anaconda有两种版本2和3请注意了，2代表默认python2，3代表默认python3，建议下载3</p>
+<h4 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels https:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span></span><br><span class="line">conda config --add channels https:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span></span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls yes</span><br></pre></td></tr></table></figure>
+<h4 id="python2-7升级python3-6"><a href="#python2-7升级python3-6" class="headerlink" title="python2.7升级python3.6"></a>python2.7升级python3.6</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda update conda</span><br><span class="line">conda install python=<span class="number">3.6</span></span><br></pre></td></tr></table></figure>
+<h4 id="安装opencv-opencv-contrib"><a href="#安装opencv-opencv-contrib" class="headerlink" title="安装opencv+opencv_contrib"></a>安装opencv+opencv_contrib</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">下载whl</span><br><span class="line">pip intall xxx.whl</span><br></pre></td></tr></table></figure>
+<h4 id="安装dlib"><a href="#安装dlib" class="headerlink" title="安装dlib"></a>安装dlib</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda install -c menpo dlib=<span class="number">18.18</span>(千万不要这样，会将python环境变为<span class="number">3.5</span>。。。)</span><br><span class="line">下载whl</span><br><span class="line">pip install xxx.whl</span><br></pre></td></tr></table></figure>
+<h4 id="安装face-recongition"><a href="#安装face-recongition" class="headerlink" title="安装face_recongition"></a>安装face_recongition</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install face_recognition</span><br></pre></td></tr></table></figure>
+<h4 id="安装imutils"><a href="#安装imutils" class="headerlink" title="安装imutils"></a>安装imutils</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install imutils</span><br></pre></td></tr></table></figure>
+
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="">
